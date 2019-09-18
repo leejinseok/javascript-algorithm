@@ -13,3 +13,4 @@ function bubbleSort(arr) {
 }
 
 const result = bubbleSort([10, 3, 7, 2, 8, 4, 1]);
+console.log(result);
