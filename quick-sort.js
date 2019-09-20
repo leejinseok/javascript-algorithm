@@ -1,3 +1,6 @@
+/**
+ * @see https://gmlwjd9405.github.io/2018/05/10/algorithm-quick-sort.html
+ */
 function quickSort(array) {
   if (array.length < 2) return array;
 
