@@ -9,7 +9,7 @@ function quickSort(array) {
   let leftCursor = 1;
   let rightCursor = array.length - 1;
   while(leftCursor <= rightCursor) {
-    
+
     // 왼쪽수가 기준보다 크고 오른쪽 수가 기준보다 작으면 위치를 바꿉니다 (swap)
     if (array[leftCursor] > pivot && array[rightCursor] < pivot) {
       [array[leftCursor], array[rightCursor]] = [array[rightCursor], array[leftCursor]];
