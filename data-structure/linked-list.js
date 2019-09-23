@@ -68,7 +68,6 @@ list.append(3);
 
 list.remove(1);
 const search = list.search(3);
-console.log(search);
 
 let cur = list.head;
 while(cur.next) {
