@@ -50,12 +50,25 @@ LinkedList.prototype.remove = function(position) {
   this.length--;
 }
 
+LinkedList.prototype.search = function(val) {
+  let cur = this.head;
+  while(cur.next) {
+    if (cur.data === val) return cur;
+    if (cur.next && cur.next.data === val) return cur.next;
+    cur = cur.next;
+  }
+
+  return null;
+}
+
 const list = new LinkedList();
 list.append(1);
 list.append(2);
 list.append(3);
 
 list.remove(1);
+const search = list.search(3);
+console.log(search);
 
 let cur = list.head;
 while(cur.next) {
