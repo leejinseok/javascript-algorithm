@@ -53,7 +53,7 @@ list.append(1);
 list.append(2);
 list.append(3);
 
-list.removeAt(100);
+list.removeAt(10);
 
 let cur = list.head;
 while(cur.next) {
